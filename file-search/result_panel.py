@@ -224,7 +224,7 @@ class ResultPanel:
 
         if addTruncationMarker:
             linetext += "</span><span size=\"smaller\"><i> [...]</i>"
-        line = "<b>%d:</b> <span foreground=\"blue\">%s</span>" % (lineno, linetext)
+        line = "<b>%d:</b> <span foreground=\"green\">%s</span>" % (lineno, linetext)
         newIt = self.treeStore.append(it, None)
         self.treeStore.set(newIt, 0, line, 2, lineno)
 
